@@ -4,7 +4,7 @@ GatsbyJS plugin fetching data from Pocket API.
 
 ## Compatibility
 
-- v4.x - for `Gatsby@4`
+- v4.x - for `Gatsby 4` and `Gatsby 5`
 
 ## How to Use
 
