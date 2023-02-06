@@ -1,24 +1,18 @@
-# gatsby-source-pocket
+# gatsby-source-pocketapi
 
-Fetch data from Pocket API.
+GatsbyJS plugin fetching data from Pocket API.
 
-An example site for this plugin is available:
+## Compatibility
 
-- **[Demo](https://conradj.co.uk/weeklyreads/)**
-- **[Example site source code](https://github.com/conradj/pocket-public-archive)**
-
-## Breaking changes
-
-- v3.x - for `Gatsby@4`
-- v2.x - for `Gatsby@3` and lower
+- v4.x - for `Gatsby@4`
 
 ## How to Use
 
-1.  `npm install --save gatsby-source-pocket`
+1.  `npm install --save gatsby-source-pocketapi`
 
 2.  Go to https://getpocket.com/developer/ and create a new app to get your consumer key.
 
-3.  Run `node node_modules/node-getpocket/authorise --consumerkey 'YOUR-CONSUMER-KEY'` and point your browser to http://127.0.0.1:8080to get your `POCKET_ACCESS_TOKEN` string.
+3.  Run `node node_modules/node-getpocket/authorise --consumerkey 'YOUR-CONSUMER-KEY'` and point your browser to http://127.0.0.1:8080 to get your `POCKET_ACCESS_TOKEN` string.
 
     For more info on this process see https://github.com/vicchi/node-getpocket, which this plugin uses to talk to the Pocket API.
 
@@ -28,25 +22,25 @@ An example site for this plugin is available:
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-source-pocket`,
+      resolve: `gatsby-source-pocketapi`,
       options: {
         consumerKey: INSERT_HERE_YOUR_POCKET_CONSUMER_KEY,
         accessToken: INSERT_HERE_YOUR_POCKET_ACCESS_TOKEN,
         weeksOfHistory: 52,
         apiMaxRecordsToReturn: 3000,
         getCurrentWeekOnly: `n`,
-        stateFilterString: "archive",
+        stateFilterString: 'archive',
         tagFilter: false,
-        tagFilterString: "_untagged_",
+        tagFilterString: '_untagged_',
         favouriteFilter: false,
         favouriteFilterValue: 0,
         searchFilter: false,
-        searchFilterString: "These 21 things",
+        searchFilterString: 'These 21 things',
         domainFilter: false,
-        domainFilterString: "buzzfeed.com"
-      }
-    }
-  ]
+        domainFilterString: 'buzzfeed.com',
+      },
+    },
+  ],
 };
 ```
 
@@ -116,3 +110,14 @@ query PageQuery {
   }
 }
 ```
+
+## Author
+
+This plugin contains code or other contributions of the open source community. The original code was written by Conrad Jackson (@conradj) who maintained it since March 13, 2018 at https://github.com/conradj/gatsby-source-pocket. On February 5, 2023 the project has moved, with approval of Conrad, to https://github.com/Vacilando/gatsby-source-pocketapi where it continues to this day. Thank you again @conradj for your trust and a chance to steer the development of this plugin into the future.
+
+## Examples
+
+An example site for this plugin is available:
+
+- **[Demo](https://conradj.co.uk/weeklyreads/)**
+- **[Example site source code](https://github.com/conradj/pocket-public-archive)**

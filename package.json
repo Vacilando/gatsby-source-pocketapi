@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-source-pocket",
-  "version": "3.0.1",
-  "description": "Fetch data from Pocket API",
+  "name": "gatsby-source-pocketapi",
+  "version": "4.0.0",
+  "description": "GatsbyJS plugin fetching data from Pocket API",
   "main": "gatsby-node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Conrad Jackson @conradj",
+  "author": "Tomas Fülöpp @Vacilando",
   "license": "MIT",
   "dependencies": {
     "date-fns": "^2.25.0",
@@ -17,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/conradj/gatsby-source-pocket"
+    "url": "https://github.com/Vacilando/gatsby-source-pocketapi"
   },
-  "homepage": "https://github.com/conradj/gatsby-source-pocket/blob/master/README.md",
+  "homepage": "https://github.com/Vacilando/gatsby-source-pocketapi/blob/master/README.md",
   "keywords": [
     "gatsby",
     "gatsbyjs",
