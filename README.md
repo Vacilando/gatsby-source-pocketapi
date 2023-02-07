@@ -1,6 +1,6 @@
 # gatsby-source-pocketapi
 
-GatsbyJS plugin fetching data from Pocket API.
+GatsbyJS plugin fetching data from Pocket API (a Mozilla project).
 
 ## Compatibility
 
