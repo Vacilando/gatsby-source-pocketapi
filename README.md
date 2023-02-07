@@ -113,7 +113,7 @@ query PageQuery {
 
 ## Author
 
-This plugin contains code or other contributions of the open source community. The original code was written by Conrad Jackson (@conradj) who maintained it since March 13, 2018 at https://github.com/conradj/gatsby-source-pocket. On February 5, 2023 the project has moved, with approval of Conrad, to https://github.com/Vacilando/gatsby-source-pocketapi where it continues to this day. Thank you again @conradj for your trust and a chance to steer the development of this plugin into the future.
+This plugin contains code or other contributions of the open source community. The original code was written by Conrad Jackson who maintained it since March 13, 2018 at https://github.com/conradj/gatsby-source-pocket. On February 5, 2023 the project has moved, with approval of Conrad, to https://github.com/Vacilando/gatsby-source-pocketapi where it continues to this day. Thank you again, @conradj, for your trust and a chance to steer the development of this plugin into the future.
 
 ## Examples
 
