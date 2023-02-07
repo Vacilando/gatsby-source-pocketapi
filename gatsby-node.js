@@ -88,7 +88,7 @@ exports.sourceNodes = async (
     pluginOptions
   );
 
-  // Fetch up to apiMaxRecordsToReturn from Pocket API. If more than maxItemsToFetchInOneCall, do it in several requests.
+  // Fetch up to apiMaxRecordsToReturn from Pocket API. If more than maxItemsToFetchInOneCall, do it in several requests using "offset", see https://getpocket.com/developer/docs/v3/retrieve
   var done = false;
   var i = 0;
   var itemsFetched = 0;
