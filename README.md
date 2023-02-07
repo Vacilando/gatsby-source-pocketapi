@@ -27,7 +27,7 @@ module.exports = {
         consumerKey: INSERT_HERE_YOUR_POCKET_CONSUMER_KEY,
         accessToken: INSERT_HERE_YOUR_POCKET_ACCESS_TOKEN,
         weeksOfHistory: 52,
-        apiMaxRecordsToReturn: 3000,
+        apiMaxRecordsToReturn: 10000,
         getCurrentWeekOnly: `n`,
         stateFilterString: 'archive',
         tagFilter: false,
@@ -47,7 +47,7 @@ module.exports = {
 ## Plugin Options
 
 - **weeksOfHistory**: Number of weeks worth of articles to fetch
-- **apiMaxRecordsToReturn**: Limit the number of records to return, to stop you hitting your [api limit](https://getpocket.com/developer/docs/rate-limits).
+- **apiMaxRecordsToReturn**: Number of records to return. If higher than 5000, the items will be fetched in several calls.
 - **getCurrentWeekOnly**:
   - `n` will fetch data based on the settings above.
   - `y` returns the current week and the last week (it'll make sense when you try it).
